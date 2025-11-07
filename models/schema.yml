@@ -3,9 +3,9 @@ version: 2
 sources:
   - name: raw_gz
     schema: gz_raw_data
-    tables: 
+    tables:
       - name: sales
-        identifier:  raw_gz_sales
+        identifier: raw_gz_sales
         description: sales data for greenweez company
       - name: product
         identifier: raw_gz_product
@@ -13,9 +13,3 @@ sources:
       - name: ship
         identifier: raw_gz_ship
         description: ship data of greenweez
-
-
-
-
-
-

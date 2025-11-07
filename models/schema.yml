@@ -7,9 +7,32 @@ sources:
       - name: sales
         identifier: raw_gz_sales
         description: sales data for greenweez company
+        # freshness testing
+        loaded_at_field: "CAST(date_date as TIMESTAMP)"
+        freshness: 
+          warn_after: {count: 90, period: day}
+        columns:
+          - name: date_date
+            description:  date of purchase
+    
+        
       - name: product
         identifier: raw_gz_product
         description: products on greenweez
+        columns:
+          - name: products_id
+            description: primary key
+            tests:
+              - unique
+              - not_null
+              
       - name: ship
         identifier: raw_gz_ship
         description: ship data of greenweez
+        columns:
+          - name: orders_id
+            description: primary key
+            tests:
+              - unique 
+              - not_null
+

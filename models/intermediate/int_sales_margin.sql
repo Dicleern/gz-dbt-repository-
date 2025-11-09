@@ -1,5 +1,6 @@
 select
  s.date_date,
+ s.orders_id,
  s.products_id,
  s.revenue,
  s.quantity,
@@ -9,3 +10,4 @@ select
  from {{ref("stg_raw_gz__sales")}} s
  left join {{ref("stg_raw_gz__product")}} p
 on s.products_id = p.products_id
+

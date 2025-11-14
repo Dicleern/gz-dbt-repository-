@@ -23,6 +23,6 @@ select
  total_shipping_cost,
  round((total_logcost + ship_cost),0) as total_logistic_cost,
  total_quantity,
- round((total_revenue/total_transactions),0) as avg_basket
+ round((total_revenue/NULLIF(total_transactions),0),0) as avg_basket
  from totals
  order by date_date desc

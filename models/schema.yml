@@ -36,3 +36,22 @@ sources:
               - unique 
               - not_null
 
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: raw data of adwords
+      
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: raw data of bing
+      
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: raw data of criteo
+
+
+      - name: facebook
+        identifier: raw_ga_facebook
+        description: raw data of facebook
+        

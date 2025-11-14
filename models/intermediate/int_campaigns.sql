@@ -1,0 +1,11 @@
+SELECT *
+FROM {{ref("stg_raw_gz__adwords")}}
+UNION ALL
+SELECT *
+FROM {{ref("stg_raw_gz__bing")}}
+UNION ALL
+SELECT *
+FROM {{ref("stg_raw_gz__criteo")}}
+UNION ALL
+SELECT *
+FROM {{ref("stg_raw_gz__facebook")}}

@@ -54,6 +54,6 @@ sources:
 
 
       - name: facebook
-        identifier: raw_ga_facebook
+        identifier: raw_gz_facebook
         description: raw data of facebook
 

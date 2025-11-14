@@ -39,7 +39,9 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: raw data of adwords
-      
+        columns:
+          - name: camPGN_name
+            
 
       - name: bing
         identifier: raw_gz_bing
@@ -54,4 +56,4 @@ sources:
       - name: facebook
         identifier: raw_ga_facebook
         description: raw data of facebook
-        
+
